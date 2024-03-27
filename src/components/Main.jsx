@@ -3,6 +3,11 @@ import{ useState } from "react";
 export default function Main(){
     const[nome, setNome] = useState("");
     const[telefone, setTelefone] = useState("");
+    const[listaContatos, setContatos] = useState( [ ] )
+
+    const registrar = () => {
+              alert("deu certo!");
+    }
 
     return (
         <main>
@@ -19,12 +24,12 @@ export default function Main(){
               {nome}
 <br></br>
 <br></br>
-              <label htmlFor="nome">Nome:</label>
+              <label htmlFor="telefone">telefone:</label>
               <input
               type="text"
               nome=""
               id=""
-              value={nome}
+              value={telefone}
               onChange={(event)=> telefone(event.target.value)
               }
               />
